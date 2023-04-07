@@ -158,10 +158,10 @@
       color: $secondary-grey;
     }
   }
-  & .ingredients__topic{
+  & .ingredients__topic,
+  & .ingredients__bold-name{
     color: $main-white;
   }
-
 }
 
 .dark-theme {
@@ -199,22 +199,23 @@
 
 .dark-theme {
   & .fav__select-input__mm{
-    background-color: $main-black;
     color: $main-white;
-                     }   
+    &:hover,
+    :focus {
+        color: $main;
+      }
+  }   
   & .burger-menu{
     background-color: $main-black;
     color: $main-white;
-           }   
-   & .header-nav__item__mm {
-    &:hover {
+  }   
+  & .header-nav__item__mm {
+    &:hover,
+    :focus {
     color:$main;
     }
-    &:focus {
-    color:$main;
-    }
-           }          
- }
+  }          
+}
  
 .dark-theme {
   & .fav__title{
@@ -241,5 +242,9 @@
  .dark-theme {
   & .menu-close__btn{
     fill: $main;
+  }
+
+  & #content-title{
+    color: $main-white;
   }
  }
