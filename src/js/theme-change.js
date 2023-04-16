@@ -36,9 +36,6 @@
         } else {
           this.setTheme();
         }
-        document.querySelectorAll('.header-nav__item').forEach(el => {
-          el.classList.toggle(darkTheme, !isDark);
-        });
       }
   
       setThemeOn(isOn) {
